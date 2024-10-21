@@ -1,0 +1,508 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8 !important; /* Thêm !important để đảm bảo màu nền được áp dụng */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #e74c3c; 
+}
+
+p {
+  color: #2c3e50; 
+}
+/* 
+---------------------------------------------
+Pre-loader Style
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+Header Style
+--------------------------------------------- 
+*/
+.header-area {
+  background-color: #f0f4f8; 
+  padding: 10px 0;
+  position: relative;
+  z-index: 100;
+}
+
+.header-area .container {
+  width: 80%;
+  margin: auto;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .logo img {
+  max-height: 150px; /* Điều chỉnh kích thước logo */
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav li a {
+  color: #9face1; 
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #C6D0F8; /* Màu khi hover */
+}
+
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input input {
+  border: none;
+  background-color: #ffffff; /* Màu nền của ô tìm kiếm */
+  border-radius: 30px;
+  padding: 10px 40px 10px 15px; /* Điều chỉnh padding để icon không đè lên text */
+  width: 200px;
+  outline: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Áp dụng font chữ Poppins */
+}
+
+.search-input i {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+/* 
+---------------------------------------------
+Main-container Style
+--------------------------------------------- 
+*/
+.main-container {
+  background-color: #f0f4f8; 
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px; 
+}
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+.main-container .banner-container {
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../image/forest.jpg'); /* Thêm gradient mờ để làm nổi bật nội dung */
+  background-size: cover;
+  height: 500px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.main-container .banner-container .banner-content {
+  padding: 40px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-container .banner-container .banner-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff; 
+  margin-bottom: 10px;
+}
+
+.main-container .banner-container .banner-content h1 {
+  font-size: 50px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ffffff; 
+  text-transform: uppercase; 
+  margin-bottom: 50px;
+}
+
+.main-container .banner-container .banner-content h1 .highlight {
+  color: #C6D0F8; 
+}
+
+.main-container .banner-container .banner-content .banner-btn {
+  background-color: #9face1;
+  color: #fff;
+  padding: 14px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-container .banner-container .banner-content .banner-btn:hover {
+  background-color: #C6D0F8; 
+  transform: translateY(-3px); 
+}
+
+/* 
+---------------------------------------------
+About Style
+--------------------------------------------- 
+*/
+
+.main-container .about-spirit {
+  margin-top: 50px;
+  border-radius: 25px;
+  background-color: #f0f4f8 !important;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.about-spirit .about-content {
+  text-align: left;
+  margin: 50px 50px;
+  color: #9face1;
+}
+
+.about-spirit .about-content h2 {
+  color: #8898D9;
+}
+.about-spirit .video-spirit {
+  margin: 50px 10px;
+}
+.about-spirit .video-spirit iframe {
+  border-radius: 25px;
+}
+
+/* 
+---------------------------------------------
+Course Style
+--------------------------------------------- 
+*/
+.main-container .course-style {
+  margin-top: 50px;
+  border-radius: 25px;
+  background-color: #f0f4f8 !important;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.main-container .course-style h2 {
+  color: #8898D9;
+  margin: 0 50px;
+}
+.main-container .course-style .course-1 {
+  display: flex; 
+  align-items: center;
+  margin: 10px 50px;
+  
+}
+.main-container .course-style .course-1 .card-image {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.main-container .course-style .course-1 .card-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.main-container .course-style .course-1 .card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container .course-style .course-1 .card-content h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin: 20px 0;
+}
+
+.main-container .course-style .course-1 .card-content p {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.main-container .course-style .course-1 .card-content .start-btn {
+  background-color: #9face1;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+}
+
+.main-container .course-style .course-1 .card-content .start-btn:hover {
+  background-color: #C6D0F8; 
+  transform: translateY(-3px); 
+}
+
+
+/* 
+---------------------------------------------
+Course 2 Style
+--------------------------------------------- 
+*/
+.main-container .course-style .course-2 {
+  display: flex; 
+  align-items: center;
+  margin: 10px 50px;
+  
+}
+.main-container .course-style .course-2 .card-image {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.main-container .course-style .course-2 .card-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.main-container .course-style .course-2 .card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container .course-style .course-2 .card-content h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin: 20px 0;
+}
+
+.main-container .course-style .course-2 .card-content p {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.main-container .course-style .course-2 .card-content .start-btn {
+  background-color: #9face1;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+}
+
+.main-container .course-style .course-2 .card-content .start-btn:hover {
+  background-color: #C6D0F8; 
+  transform: translateY(-3px); 
+}
+
+/* 
+---------------------------------------------
+Course 3 Style
+--------------------------------------------- 
+*/
+.main-container .course-style .course-3 {
+  display: flex; 
+  align-items: center;
+  margin: 10px 50px;
+  
+}
+.main-container .course-style .course-3 .card-image {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.main-container .course-style .course-3 .card-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.main-container .course-style .course-3 .card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container .course-style .course-3 .card-content h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin: 20px 0;
+}
+
+.main-container .course-style .course-3 .card-content p {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.main-container .course-style .course-3 .card-content .start-btn {
+  background-color: #9face1;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+}
+
+.main-container .course-style .course-3 .card-content .start-btn:hover {
+  background-color: #C6D0F8; 
+  transform: translateY(-3px); 
+}
+
+
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+footer {
+  background-color: #f0f4f8;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-title {
+  margin: 20px 0;
+}
+
+.footer-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #9face1;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  margin: 40px 0;
+}
+
+.footer-link ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-link ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-link ul li a {
+  color: #9face1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+
+}
+
+.footer-link ul li a:hover {
+  color: #C6D0F8;
+}
+
+.footer-social {
+  margin: 40px 0;
+}
+
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.footer-social ul li a {
+  color: #9face1;
+  text-decoration: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9face1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+  background-color: #9face1; /* Màu nền xanh lục nhạt khi di chuột */
+  color: #fdf2cc;
+}
+
+.footer-bottom {
+  margin-top: 70px;
+  color: #aaa;
+}
+
+.footer-bottom p a {
+  color: #9face1;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #C6D0F8;
+}
+
