@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f4f8 !important; /* Thêm !important để đảm bảo màu nền được áp dụng */
+  background-color: #C4E5EE !important; /* Thêm !important để đảm bảo màu nền được áp dụng */
+  background: linear-gradient(to bottom, #D2FDFF, #C4E5EE);
+
   margin: 0;
   padding: 0;
   height: 100%;
@@ -11,6 +15,7 @@ a {
 
 h1 {
   color: #e74c3c; 
+  
 }
 
 p {
@@ -28,10 +33,12 @@ Header Style
 --------------------------------------------- 
 */
 .header-area {
-  background-color: #f0f4f8; 
+  background-color: #D2FDFF; 
+
   padding: 10px 0;
   position: relative;
   z-index: 100;
+  font-family: 'DynaPuff';
 }
 
 .header-area .container {
@@ -60,7 +67,7 @@ Header Style
 }
 
 .nav li a {
-  color: #9face1; 
+  color: #233c54; 
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -76,6 +83,8 @@ Header Style
   position: relative;
   display: flex;
   align-items: center;
+  border: 2px solid #233c54; /* Đường viền của ô tìm kiếm */
+  border-radius: 30px; /* Đường viền bo tròn */
 }
 
 .search-input input {
@@ -103,14 +112,17 @@ Main-container Style
 --------------------------------------------- 
 */
 .main-container {
-  background-color: #f0f4f8; 
+  background-color: #5687A5; 
+  background: linear-gradient(to top, #476e86, #5687A5);
+
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
   width: 90%;
   text-align: center;
   margin: auto;
-  margin-top: 50px; 
+  
+  margin-bottom: 50px;
 }
 
 /* 
@@ -132,6 +144,7 @@ Banner Style
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: relative;
+  font-family: 'DynaPuff';  
 }
 
 .main-container .banner-container .banner-content {
@@ -142,7 +155,7 @@ Banner Style
 }
 
 .main-container .banner-container .banner-content h3 {
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 500;
   color: #ffffff; 
   margin-bottom: 10px;
@@ -155,6 +168,7 @@ Banner Style
   color: #ffffff; 
   text-transform: uppercase; 
   margin-bottom: 50px;
+  
 }
 
 .main-container .banner-container .banner-content h1 .highlight {
@@ -195,11 +209,12 @@ About Style
 .about-spirit .about-content {
   text-align: left;
   margin: 50px 50px;
-  color: #9face1;
+  color: black;
 }
 
 .about-spirit .about-content h2 {
-  color: #8898D9;
+  color: #5687A5;
+  font-family: 'DynaPuff';
 }
 .about-spirit .video-spirit {
   margin: 50px 10px;
@@ -223,8 +238,9 @@ Course Style
 }
 
 .main-container .course-style h2 {
-  color: #8898D9;
+  color: #5687A5;
   margin: 0 50px;
+  font-family: 'DynaPuff';
 }
 .main-container .course-style .course-1 {
   display: flex; 
@@ -263,7 +279,7 @@ Course Style
 }
 
 .main-container .course-style .course-1 .card-content .start-btn {
-  background-color: #9face1;
+  background-color: #5687A5;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -323,7 +339,7 @@ Course 2 Style
 }
 
 .main-container .course-style .course-2 .card-content .start-btn {
-  background-color: #9face1;
+  background-color: #5687A5;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -382,7 +398,7 @@ Course 3 Style
 }
 
 .main-container .course-style .course-3 .card-content .start-btn {
-  background-color: #9face1;
+  background-color: #5687A5;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -407,10 +423,11 @@ Footer Style
 --------------------------------------------- 
 */
 footer {
-  background-color: #f0f4f8;
+  background-color: #4898C5;
   color: white;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
+  font-family: 'DynaPuff';
 }
 
 .footer-title {
@@ -420,7 +437,6 @@ footer {
 .footer-title h2 {
   font-size: 32px;
   font-weight: bold;
-  color: #9face1;
   margin-bottom: 20px;
 }
 
@@ -440,7 +456,7 @@ footer {
 }
 
 .footer-link ul li a {
-  color: #9face1;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -450,7 +466,7 @@ footer {
 }
 
 .footer-link ul li a:hover {
-  color: #C6D0F8;
+  color: white;
 }
 
 .footer-social {
@@ -472,7 +488,7 @@ footer {
 }
 
 .footer-social ul li a {
-  color: #9face1;
+  color: white;
   text-decoration: none;
   font-size: 24px;
   width: 40px;
@@ -480,29 +496,33 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #9face1;
+  border: 2px solid white;
   border-radius: 50%;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-social ul li a:hover {
   background-color: #9face1; /* Màu nền xanh lục nhạt khi di chuột */
-  color: #fdf2cc;
+  color: white;
 }
 
 .footer-bottom {
   margin-top: 70px;
-  color: #aaa;
+  color: white;
 }
 
 .footer-bottom p a {
-  color: #9face1;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
 
+.footer-bottom p {
+  color: white;
+}
+
 .footer-bottom a:hover {
-  color: #C6D0F8;
+  color: white;
 }
 
